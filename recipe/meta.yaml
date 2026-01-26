@@ -1,5 +1,5 @@
 {% set name = "pyregeon" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyregeon-{{ version }}.tar.gz
-  sha256: 6af986c77570617afdd0d738a7117350264cc74c785788351c190dd9aa02dbd1
+  sha256: 23b9db4fdfd91d4f0e5ec945a2316f49d724a88c42cc97a4405df23bf6a59b8b
 
 build:
   noarch: python
