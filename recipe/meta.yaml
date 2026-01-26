@@ -1,5 +1,5 @@
 {% set name = "pyregeon" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyregeon-{{ version }}.tar.gz
-  sha256: 5961b8d64f3106b5aebb0f750970c6ca9304180de43af5c337cf3c1986ec51c5
+  sha256: 23b9db4fdfd91d4f0e5ec945a2316f49d724a88c42cc97a4405df23bf6a59b8b
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61.0
+    - uv-build >=0.9.4,<0.10.0
     - pip
   run:
     - python >={{ python_min }}
